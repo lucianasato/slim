@@ -26,3 +26,5 @@ $container['database'] = function ($c) {
     $manager->bootEloquent();
     return $manager->getConnection('default');
 };
+
+$container['database'];
