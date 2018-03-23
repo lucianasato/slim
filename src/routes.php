@@ -17,4 +17,5 @@ $app->options('/{routes:.+}', function ($request, $response, $args) {
     return $response;
 });
 
+require __DIR__ . '/routes/auth.php';
 require __DIR__ . '/routes/users.php';

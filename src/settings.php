@@ -27,5 +27,8 @@ return [
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
         ],
+
+        // Secret Key to Generate token
+        'secretKey' => '12313a3d28f802e3a22b07d2e01c6dcf'
     ],
 ];
