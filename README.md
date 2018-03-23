@@ -25,3 +25,10 @@ Run this command in the application directory to run the test suite
 	php composer.phar test
 
 That's it! Now go build something cool.
+
+# Dependencies
+
+- illuminate/Database https://github.com/illuminate/database
+- illuminate/Events https://github.com/illuminate/events
+- robmorgan/phinx https://packagist.org/packages/robmorgan/phinx
+- PHP-JWT https://github.com/firebase/php-jwt
