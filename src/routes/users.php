@@ -16,3 +16,9 @@ $app->post('/api/v1/users', function(Request $request, Response $response, array
 $app->get('/api/v1/users/{id}', function(Request $request, Response $response, array $args) {
     return $response->withJson(User::findOrFail($args['id']));
 });
+
+$app->put('/api/v1/users/{id}', function(Request $request, Response $response, array $args) {
+    $user = User::findOrFail($args['id']);
+    $user->update($request->getParsedBody());
+    return $response->withJson($user);
+});
