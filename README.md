@@ -32,3 +32,4 @@ That's it! Now go build something cool.
 - illuminate/Events https://github.com/illuminate/events
 - robmorgan/phinx https://packagist.org/packages/robmorgan/phinx
 - PHP-JWT https://github.com/firebase/php-jwt
+- Authentication Middleware https://github.com/tuupola/slim-jwt-auth
