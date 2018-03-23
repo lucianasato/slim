@@ -13,4 +13,8 @@ $app->get('/[{name}]', function (Request $request, Response $response, array $ar
     return $this->renderer->render($response, 'index.phtml', $args);
 });
 
+$app->options('/{routes:.+}', function ($request, $response, $args) {
+    return $response;
+});
+
 require __DIR__ . '/routes/users.php';
