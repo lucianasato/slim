@@ -12,3 +12,7 @@ $app->post('/api/v1/users', function(Request $request, Response $response, array
     $user = User::create($request->getParsedBody());
     return $response->withJson($user);
 });
+
+$app->get('/api/v1/users/{id}', function(Request $request, Response $response, array $args) {
+    return $response->withJson(User::findOrFail($args['id']));
+});
